@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "vite build -w --mode development",
+    "dev": "tsc -w -p .",
+    "build": "tsc -p .",
     "test": "vitest run"
   },
   "keywords": [],
@@ -13,7 +14,6 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.12.11",
-    "vite": "^5.2.11",
     "vitest": "^1.6.0"
   }
 }

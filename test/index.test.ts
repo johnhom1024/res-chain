@@ -1,6 +1,6 @@
 
 import { test, expect } from 'vitest';
-import { ResChain } from '..';
+import { ResChain } from '../src/index';
 
 test('hello', async () => {
   const resChain = new ResChain();
@@ -30,6 +30,7 @@ test('hello', async () => {
       }, 2000);
     })
     await next();
+    console.log('key3 end');
   });
 
   resChain.add('key4', (ctx: any, next: any) => {
