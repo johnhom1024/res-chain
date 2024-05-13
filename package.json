@@ -1,6 +1,6 @@
 {
   "name": "res-chain",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "author": "johnhom1024",
   "description": "A chain of responsibility pattern implementation in TypeScript",
   "main": "./dist/index.js",
