@@ -12,7 +12,7 @@
   },
   "hooks": {
     "before:init": ["npm run build", "npm run test"],
-    "after:bump": "更新版本成功"
+    "after:bump": "echo 更新版本成功"
   },
   "plugins": {
     "@release-it/conventional-changelog": {
