@@ -11,6 +11,7 @@
     "publish": true
   },
   "hooks": {
+    "before:init": ["npm run build", "npm run test"],
     "after:bump": "更新版本成功"
   },
   "plugins": {
