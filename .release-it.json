@@ -1,0 +1,22 @@
+{
+  "git": {
+    "commitMessage": "release: v${version}"
+  },
+  "github": {
+    "release": true,
+    "draft": false
+  },
+  "npm": {
+    "versionArgs": ["--allow-same-version"],
+    "publish": true
+  },
+  "hooks": {
+    "after:bump": "更新版本成功"
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
+  }
+}
