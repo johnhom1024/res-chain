@@ -1,19 +1,35 @@
 {
   "name": "res-chain",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
+  "author": "johnhom1024",
+  "description": "A chain of responsibility pattern implementation in TypeScript",
+  "main": "./dist/index.js",
+  "type": "commonjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "tsc -w -p .",
     "build": "tsc -p .",
-    "test": "vitest run"
+    "test": "vitest run",
+    "release": "npm run build && release-it"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
+  "keywords": [
+    "chain of responsibility",
+    "chain"
+  ],
+  "homepage": "https://github.com/johnhom1024/res-chain",
+  "repository": "https://github.com/johnhom1024/res-chain.git",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^8.0.1",
     "@types/node": "^20.12.11",
+    "release-it": "^17.2.1",
     "vitest": "^1.6.0"
   }
 }
