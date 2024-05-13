@@ -1,4 +1,6 @@
-# res-chain
+# &#128640; res-chain
+
+![alt text](logo.png)
 
 责任链工具。
 
@@ -12,7 +14,7 @@
 
 与`Koa`的中间件调用方式类似。
 
-同步模式下：
+### &#128260; 同步模式下：
 
 ```js
 import { ResChain } from 'res-chain';
@@ -39,8 +41,7 @@ resChain.add('key3', (_, next) => {
 resChain.run(); // => 将会按顺序输出 key1 key2
 ```
 
-异步模式下：
-
+### &#9203; 异步模式下：
 
 ```js
 import { ResChain } from 'res-chain';
@@ -80,7 +81,4 @@ console.log('finished');
 // 先输出 async1 async2 然后停顿了1秒钟之后，才输出async3 finished
 ```
 
-> 需要注意：如果是异步模式，则链上的每个回调函数必须要 await next()，因为next函数代表下一个环的异步函数。
-
-
-
+> &#128679; 需要注意：如果是异步模式，则链上的每个回调函数必须要 await next()，因为next函数代表下一个环的异步函数。
